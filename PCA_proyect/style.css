@@ -45,7 +45,11 @@ h2{
     font-size: larger;
     line-height: 1.565;
     font-weight: 400;
-    
+    transition: all .78s;
+}
+.description:hover{
+    transform: translate(.3vw,2vh);
+    padding: 70px;
 }
 .description2{
     text-align: justify;
@@ -56,7 +60,9 @@ h2{
     padding: 20px;
     border-radius: 2%;
     box-shadow: 5px 10px 4px rgba(6, 185, 255, 0.1);
+    transition: all 1.1s;
 }
+
 .Convert,.Speed{
     padding: 5px;
     margin: 14vh 0px;
@@ -88,12 +94,20 @@ img{
     width: 55vw;
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 20px; border-radius: 2%;box-shadow:
+    2px 4px 4px 10px rgba(4, 247, 255, 0.1);
+}
+.sombreado:hover , .ultimate:hover{
+    box-shadow: 5px 5px 6px 15px rgba(6, 184, 255, 0.657);
 }
 
 
 
 /*
     boton de css que tome de internet.
+    con contenido que posee el pseudo-elemento
+    ::after and ::before
 
 
 a.boton{
