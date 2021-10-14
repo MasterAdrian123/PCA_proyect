@@ -109,38 +109,42 @@ img{
 
 */
 .carrusel-container{
-    width: 40vw;
-    height: 60vh;
+    width: 20vw;
+    height: 50vh;
 }
 .carrusel{
     border: 1px solid black;    
     width: 90%;
     height: 90%;
-    margin-left: 3vw;
+    margin-left: 6vw;
     transform-style: preserve-3d;
     transition: transform 1s;
+    text-align: center;
+    align-items: center;
     animation: rotateInY 25s infinite linear;
 }
 figure {
+    
     display: block;
     position: absolute;
     width: 100%;
     height:100%;
+    border: 1px solid black;
     font-weight: bold;
-    color: rgb(146, 8, 8);
-    text-align: center;
+    color: rgb(187, 255, 0);
+    background-color: rgba(0, 0, 0, 0.568);
 }
 figure:nth-child(1) {
-    transform: rotateY( 0deg ) translateZ( 288px ) ;
+    transform: rotateY( 0deg ) translateZ( 188px ) ;
   }
 figure:nth-child(2) {
-    transform: rotateY( 90deg ) translateZ( 288px ) ;
+    transform: rotateY( 90deg ) translateZ( 188px ) ;
 }
 figure:nth-child(3) {
-    transform: rotateY( 180deg ) translateZ( 288px ) ;
+    transform: rotateY( 180deg ) translateZ( 188px ) ;
 }
 figure:nth-child(4) {
-    transform: rotateY( 270deg ) translateZ( 288px ) ;
+    transform: rotateY( 270deg ) translateZ( 188px ) ;
 }
 @keyframes rotateInY {
     0%   { transform: rotateY(0deg);}
