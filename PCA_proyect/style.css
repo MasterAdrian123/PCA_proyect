@@ -49,7 +49,7 @@ h2{
 }
 .description:hover{
     transform: translate(.3vw,2vh);
-    padding: 70px;
+    padding: 40px;
 }
 .description2{
     text-align: justify;
@@ -75,7 +75,7 @@ table{
 td{
     margin-right: 10px;
     padding: 10px;
-    transition: all 1s;
+    transition: all .6s;
 }
 td:hover{
     padding: 40px;
@@ -84,6 +84,7 @@ td:hover{
 }
 img{
     max-width: 34vw;
+    filter: opacity(90%);
 }
 .random_thinks{
     padding: 10vh 0;
@@ -112,39 +113,42 @@ img{
     width: 20vw;
     height: 50vh;
 }
-.carrusel{
-    border: 1px solid black;    
-    width: 90%;
-    height: 90%;
-    margin-left: 6vw;
+.carrusel{ 
+    width: 100%;
+    height: 100%;
+    margin-left: 4.7vw;
     transform-style: preserve-3d;
     transition: transform 1s;
+    animation: rotateInY 15s infinite linear;
     text-align: center;
-    align-items: center;
-    animation: rotateInY 25s infinite linear;
+    
 }
 figure {
-    
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 10%;
     width: 100%;
     height:100%;
-    border: 1px solid black;
     font-weight: bold;
-    color: rgb(187, 255, 0);
-    background-color: rgba(0, 0, 0, 0.568);
 }
 figure:nth-child(1) {
-    transform: rotateY( 0deg ) translateZ( 188px ) ;
+    transform: rotateY( 0deg ) translateZ( 16.4vw ) ;
+    background-color: rgba(1, 253, 253, 0.109);
   }
 figure:nth-child(2) {
-    transform: rotateY( 90deg ) translateZ( 188px ) ;
+    transform: rotateY( 90deg ) translateZ( 16.4vw) ;
+    background-color: rgba(5, 71, 255, 0.109);
 }
 figure:nth-child(3) {
-    transform: rotateY( 180deg ) translateZ( 188px ) ;
+    transform: rotateY( 180deg ) translateZ( 16.4vw ) ;
+    background-color: rgba(226, 250, 8, 0.109);
 }
 figure:nth-child(4) {
-    transform: rotateY( 270deg ) translateZ( 188px ) ;
+    transform: rotateY( 270deg ) translateZ( 16.4vw ) ;
+    background-color: rgba(76, 0, 255, 0.109);
 }
 @keyframes rotateInY {
     0%   { transform: rotateY(0deg);}
