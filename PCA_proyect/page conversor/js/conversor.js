@@ -1,6 +1,3 @@
-/**
- * Created by Luis Cabrera Benito on 25/01/2016.
- */
 $(document).ready(function () {
     principal();
     $selectPrimerGrupo.val('metro');
