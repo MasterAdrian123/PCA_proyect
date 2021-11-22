@@ -13,51 +13,19 @@
             <h1>CONVERSOR DE LONGITUD</h1>
             <P>seleccione que unidad desea convertir y a cual</P>
         </div>
-        <div class=" main">
-            <div class="form">
-                <div class="left">
-                    <div class="contenedor">
-                        <input type="number" name="numero" id="origen" placeholder="unidad a convertir">
-                        <select name="principal" id="select-id">
-                            <option value="1">centimetros</option>
-                            <option value="2">metros</option>
-                            <option value="3">kilometros</option>
-                            <option value="4">pulgada</option>
-                            <option value="5">pie</option>
-                            <option value="6">yarda</option>
-                            <option value="7">milla</option>
-                        </select>
-                    </div>
-                </div>
-                <br>
-                <div class="central">
-                    <button onclick="accionar()">convertir</button>
-                </div> 
-                <br>
-                <div class=" right">
-                    <div class="contenedor">
-                        <input type="number" id="conversor" disabled>
-                        <select name="convercion" id="conversion-id">
-                            <option value="1">centimetros</option>
-                            <option value="2">metros</option>
-                            <option value="3">kilometros</option>
-                            <option value="4">pulgada</option>
-                            <option value="5">pie</option>
-                            <option value="6">yarda</option>
-                            <option value="7">milla</option>
-                        </select>
-                    </div>
-                </div>
-                <script>
-                    var var1 = document.getElementById("select-id");
-                    var var2 = document.getElementById("conversion-id");
-                    var var3 = document.getElementById("origen");
-                    var var4 = document.getElementById("conversor");
-                    function accionar(){
-                        var4.innerHTML = var3.value()
-                    }
-                </script>
-                <br>
+        <div class="form">
+            <div class="container">
+                <label for="#" style="background-color: rgba(0, 255, 255, 0.212);">Que desea hallar?</label>
+                <select name="hallar" id="hallar">
+                    <option value="velocidad-media">VELOCIDAD MEDIA</option>
+                    <option value="aceleracion">ACELERACION</option>
+                    <option value="velocidad-inicial">VELOCIDAD INICIAL</option>
+                    <option value="velocidad-final">VELOCIDAD FINAL</option>
+                    <option value="aceleracion-inicial">ACELERACION INICIAL</option>
+                    <option value="aceleracion-final">ACELERACION FINAL</option>
+                    <option value="tiempo">TIEMPO</option>
+                    <option value="distancia">DISTANCIA</option>
+                </select>
             </div>
         </div>
     </div>
