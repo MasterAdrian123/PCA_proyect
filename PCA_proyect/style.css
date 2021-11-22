@@ -63,7 +63,7 @@ h2{
     transition: all 1.1s;
 }
 
-.Convert,.Speed{
+.Convert,.formales, .Speed{
     padding: 5px;
     margin: 14vh 0px;
     display: flex;
