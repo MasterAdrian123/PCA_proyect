@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LOBY PAGE</title>
+</head>
+<body style="overflow: hidden;">
+    <div class="body">
+        <div style="text-align: center;margin-top: 30vh; font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            <h1>CONVERSOR DE LONGITUD</h1>
+            <P>seleccione que unidad desea convertir y a cual</P>
+        </div>
+        <div class=" main">
+            <div class="form">
+                <div class="left">
+                    <div class="contenedor">
+                        <input type="number" name="numero" id="origen" placeholder="unidad a convertir">
+                        <select name="principal" id="select-id">
+                            <option value="1">centimetros</option>
+                            <option value="2">metros</option>
+                            <option value="3">kilometros</option>
+                            <option value="4">pulgada</option>
+                            <option value="5">pie</option>
+                            <option value="6">yarda</option>
+                            <option value="7">milla</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="central">
+                    <button onclick="accionar()">convertir</button>
+                </div> 
+                <br>
+                <div class=" right">
+                    <div class="contenedor">
+                        <input type="number" id="conversor" disabled>
+                        <select name="convercion" id="conversion-id">
+                            <option value="1">centimetros</option>
+                            <option value="2">metros</option>
+                            <option value="3">kilometros</option>
+                            <option value="4">pulgada</option>
+                            <option value="5">pie</option>
+                            <option value="6">yarda</option>
+                            <option value="7">milla</option>
+                        </select>
+                    </div>
+                </div>
+                <script>
+                    var var1 = document.getElementById("select-id");
+                    var var2 = document.getElementById("conversion-id");
+                    var var3 = document.getElementById("origen");
+                    var var4 = document.getElementById("conversor");
+                    function accionar(){
+                        var4.innerHTML = var3.value()
+                    }
+                </script>
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
