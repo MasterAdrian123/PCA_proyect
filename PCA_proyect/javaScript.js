@@ -5,6 +5,7 @@ const typing = new Typed('#typp-bdj' ,{
     '<strong class="typing-class">Fast and effective procedures</strong>',
     '<strong class="typing-class">¡¡ Choose us !!</strong>',
     '<strong class="typing-class">AVOID WORK^1100 is the answer </strong>',
+    '<strong class="typing-class">This Proyect WAS Making to Student of POLITECNICO DE LA COSTA</strong>',
     ],
     typeSpeed: 40,
     loop:true,
